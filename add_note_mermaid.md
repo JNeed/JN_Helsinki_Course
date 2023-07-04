@@ -11,5 +11,12 @@ sequenceDiagram
     activate server
     server-->>browser: CSS File
     deactivate server
-
+ browser->>server: GET [https://studies.cs.helsinki.fi/exampleapp/main.js]
+    activate server
+    server-->>browser: JavaScript File
+    deactivate server
+ browser->>server: GET [https://studies.cs.helsinki.fi/exampleapp/data.json]
+    activate server
+    server-->>browser: JSON File
+    deactivate server
 ```
