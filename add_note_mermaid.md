@@ -16,6 +16,7 @@ sequenceDiagram
     activate server
     server-->>browser: JavaScript File
     deactivate server
+ Note right of browser: browser executes main.js which loads in data from data.json
  browser->>server: GET [https://studies.cs.helsinki.fi/exampleapp/data.json]
     activate server
     server-->>browser: JSON File
